@@ -73,6 +73,7 @@ public class Categories extends JFrame {
 	                else {
 	                	pst.execute();					                
 			            System.out.println("Category: [" + nameField.getText() +"] added succesfully!");
+			            JOptionPane.showMessageDialog(null, "Category  added succesfully!");
 	                }//end else
 
 				}//end try
