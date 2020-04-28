@@ -67,61 +67,61 @@ public class SignUp extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					JOptionPane.showMessageDialog(null, "Welcome to the jungle, "+usernameField.getText() +". :)");
-				                String sql ="INSERT INTO Users (Username, Password, adminCheck) VALUES (?,?,?) ";
-				                boolean keepGoing = true;
-				                
-				                pst = conn.prepareStatement(sql);
-				                
-				                pst.setString(1, usernameField.getText());
-				                pst.setString(2, passwordField.getText());
-				                pst.setString(3, "0"); 
-				                
-				                if(usernameField.getText().equals("") || passwordField.getText().equals("") ) {
-				                	JOptionPane.showMessageDialog(null,"Username and Password can't be empty.");
-				                	System.out.println("user left one of the asked text fields empty.");
-				                }//end if
-				                
-				                else if(passwordCField.getText().equals(passwordField.getText())){
-				                	
-				                	try {
-				                		System.out.println("1");
-				                	pst.execute();
-				                	System.out.println("2");
-						            System.out.println("username: [" + usernameField.getText() + "] registered succesfully!");
-						            //JOptionPane.showMessageDialog(null, "User ["+ usernameField +"] registered succesfully!");
-				                	}
+					String sql ="INSERT INTO Users (Username, Password, adminCheck) VALUES (?,?,?) ";
+					boolean keepGoing = true;
+				               
+					pst = conn.prepareStatement(sql);
+				               
+					pst.setString(1, usernameField.getText());
+					pst.setString(2, passwordField.getText());
+					pst.setString(3, "0"); 
+					
+					if(usernameField.getText().equals("") || passwordField.getText().equals("") ) {
+						JOptionPane.showMessageDialog(null,"Username and Password can't be empty.");
+						System.out.println("user left one of the asked text fields empty.");
+					}//end if
+					
+					else if(passwordCField.getText().equals(passwordField.getText())){
+						
+						try {
+							System.out.println("1");
+							pst.execute();
+							System.out.println("2");
+							JOptionPane.showMessageDialog(null, "Welcome to the jungle, "+usernameField.getText() +". :)");
+							System.out.println("username: [" + usernameField.getText() + "] registered succesfully!");
+							//JOptionPane.showMessageDialog(null, "User ["+ usernameField +"] registered succesfully!");
+						}//end try
 									
-								catch (SQLException ex){
-									System.out.println("3");
-									JOptionPane.showMessageDialog(null, "Username already exists! Please choose another one.");
-									System.out.println("Username already exists!");
-								
-									}
-				                }//end else if
-	
-				                else {
-				                	JOptionPane.showMessageDialog(null, "Passwords don't match!");
-				                    System.out.println("Passwords don't match.");
-				                }//end else
-
+						catch (SQLException ex){
+							System.out.println("3");
+							JOptionPane.showMessageDialog(null, "Username already exists! Please choose another one.");
+							System.out.println("Username already exists!");
+							
+						}
+					}//end else if
+					
+					else {
+						JOptionPane.showMessageDialog(null, "Passwords don't match!");
+						System.out.println("Passwords don't match.");
+					}//end else
+					
 				}//end try
 				catch (Exception ew) {
 					System.out.println("something went wrong");
 				}//end catch
 		        
 			   finally {
-				                try{
-				                	//connections
-				                    rs.close();
-				                    pst.close();
-
-				                }//end try
-				                 catch(Exception v){
-
-				                }//end catch
-				         }//end finally
-
+				   try{
+					   //connections
+					   rs.close();
+					   pst.close();
+					   
+				   }//end try
+				   catch(Exception v){
+					   
+				   }//end catch
+			   }//end finally
+				
 			}//end finally
 		});
 		signupButton.setBounds(342, 61, 141, 76);

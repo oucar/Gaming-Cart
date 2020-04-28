@@ -154,6 +154,7 @@ public class Login extends JFrame {
 			            		if(LoggedIn.loggedInAdminCheck.equals("1")) {
 					            	dispose();
 				                    Menu  menu = new Menu();
+				                    menu.setLocationRelativeTo(null);
 				                    menu.setVisible(true);
 				                    
 			            		}//end if
