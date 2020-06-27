@@ -10,13 +10,6 @@ All the files that I uploaded to github (in bin and src) are the files of Gaming
 
 * This is a dashboard system for game stores.
 
-** a
-
-** a
-
-** a
-
-
 
 
 * icons from icons8.com
