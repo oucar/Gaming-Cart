@@ -15,7 +15,7 @@ public class SoldReceipt {
 				Statement st=null;
 				
 				Date date = new Date(); //DATE
-				String dateString = date + ""; 
+				String dateString = date + ""; //convert to string data type
 			 
 			 st = conn.createStatement();
 			 String sql = "SELECT * FROM Orders WHERE TransactionNumber='"+transactionNumber+"'";
@@ -48,14 +48,9 @@ public class SoldReceipt {
 			writer.println("\n\n\n Date printed: " + dateString + "\n\n\n Thank you!");
 			writer.close();
 			
-			
-				
-		  	 
 		 }//end try 
 		 catch(Exception ee) {
 			 ee.printStackTrace();	 
 		 }//end catch
-		
 	}
-
 }
