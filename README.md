@@ -1,4 +1,4 @@
-* This project was built using Java SE 13. However, after I started to test out my program I realized that .jar file was not working on IU's windows machines. So,
+* This project was built using Java SE 13. However, after I started to test out my program I realized that .jar file was not working on some of the local machines in my school's  windows machines. So;
 
 GamingCart.jar uses Java SE 8
 GamingCart13.jar uses Java SE 13
