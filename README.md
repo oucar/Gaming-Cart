@@ -6,4 +6,14 @@ GamingCart13.jar uses Java SE 13
 All the files that I uploaded to github (in bin and src) are the files of GamingCart13.jar.
 
 
+### What it does
 
+* This is a dashboard system for game stores.
+** a
+** a
+** a
+
+
+
+
+* icons from icons8.com
