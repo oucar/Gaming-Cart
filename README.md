@@ -9,7 +9,10 @@ All the files that I uploaded to github (in bin and src) are the files of Gaming
 ### What it does
 
 * This is a dashboard system for game stores.
+* It lets customers search, buy, request refund, prints previous orders and current order and basic account management operation.
+* It also allows store owner to approve or reject refund request, edit games that store has and more..
 
+Please feel free to check to get to know more about my project at --> Gaming-Cart/Documents/GamingCart.docx
 
 
 * icons from icons8.com
