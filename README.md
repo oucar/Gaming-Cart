@@ -5,9 +5,7 @@ GamingCart13.jar uses Java SE 13
 
 All the files that I uploaded to github (in bin and src) are the files of GamingCart13.jar.
 
-
-<img src=“https://raw.githubusercontent.com/oucar/Gaming-Cart/master/Documents/diagram.png”>
-
+![UML Diagram I used for Gaming Cart](“https://raw.githubusercontent.com/oucar/Gaming-Cart/master/Documents/diagram.png”>)
 
 ### What it does
 
