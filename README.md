@@ -7,7 +7,7 @@ All the files that I uploaded to github (in bin and src) are the files of Gaming
 
 ![](Documents/diagram.png?raw=true "Diagram I used for this software")
 
-### What it does
+### What is Gaming Cart?
 
 * This is a dashboard system for game stores.
 * It lets customers search, buy, request refund, prints previous orders and current order and account management operations.
